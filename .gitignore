@@ -1,0 +1,17 @@
+# JDBC Connector JAR file
+mysql-connector-java-*.jar
+
+# IDE files
+.idea/
+*.iml
+nbproject/
+
+# Compiled files
+*.class
+*.jar
+
+# Build directories
+target/
+bin/
+build/
+out/
