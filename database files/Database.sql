@@ -117,7 +117,7 @@ END$$
 
 DELIMITER ;
 
---DROP TRIGGER after_request_accepted;
+-- DROP TRIGGER after_request_accepted;
 
  -- Trigger for request from student to supervisor 
 DELIMITER $$
@@ -173,7 +173,7 @@ CREATE TABLE groupRequests (
 	FOREIGN KEY (requestedId) REFERENCES Student(regNo)
 );
 
---DROP TRIGGER onGroupRequestAccept;
+-- DROP TRIGGER onGroupRequestAccept;
 
 -- Trigger for group requests sent by student to students
 DELIMITER $$
@@ -322,7 +322,7 @@ BEGIN
 END;
 $$ DELIMITER ;
 
---DROP TRIGGER afterProposalAcceptByCoordinator;
+-- DROP TRIGGER afterProposalAcceptByCoordinator;
 
 DELIMITER $$
 CREATE TRIGGER afterProposalAcceptByCoordinator
@@ -366,7 +366,7 @@ BEGIN
 END
 $$ DELIMITER ;
 
---DROP TRIGGER after_supervisor_insert_to_committee;
+-- DROP TRIGGER after_supervisor_insert_to_committee;
 
 DELIMITER $$
 CREATE TRIGGER after_supervisor_insert_to_committee
@@ -381,16 +381,16 @@ BEGIN
 END
 $$ DELIMITER ;
 
---DROP TRIGGER before_insert_approvedProjects;
+-- DROP TRIGGER before_insert_approvedProjects;
 
---SELECT * FROM Coordinator;
---SELECT * FROM Faculty;
---SELECT * FROM Supervisor;
---SELECT * FROM Projects;
---SELECT * FROM Committee;
---SELECT * FROM ApprovedProjects;
---SELECT * FROM Student ORDER BY groupNumber ASC;
---SELECT * FROM proposedProjectsToSupervisor;
---SELECT * FROM RequestLogs;
---SELECT * FROM grouprequests;
---SELECT * FROM proposedProjectsToCoordinator;
+-- SELECT * FROM Coordinator;
+-- SELECT * FROM Faculty;
+-- SELECT * FROM Supervisor;
+-- SELECT * FROM Projects;
+-- SELECT * FROM Committee;
+-- SELECT * FROM ApprovedProjects;
+-- SELECT * FROM Student ORDER BY groupNumber ASC;
+-- SELECT * FROM proposedProjectsToSupervisor;
+-- SELECT * FROM RequestLogs;
+-- SELECT * FROM grouprequests;
+-- SELECT * FROM proposedProjectsToCoordinator;
